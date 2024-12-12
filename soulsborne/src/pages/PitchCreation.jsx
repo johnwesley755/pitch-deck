@@ -3,19 +3,7 @@ import { Link } from 'react-router-dom';
 const PitchCreation = () => {
   return (
     <div className="bg-gray-900 min-h-screen text-white">
-      <header className="p-4 bg-gray-800 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Soulsborne</h1>
-          <nav>
-            <Link
-              to="/"
-              className="px-4 py-2 bg-green-600 rounded hover:bg-green-500"
-            >
-              Home
-            </Link>
-          </nav>
-        </div>
-      </header>
+   
       <main className="container mx-auto p-8">
         <h2 className="text-3xl font-bold mb-4">Pitch Creation</h2>
         <p className="mb-6">Complete all fields (6/6) to create your pitch.</p>

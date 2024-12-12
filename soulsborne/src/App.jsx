@@ -5,6 +5,8 @@ import MyPitches from "./pages/MyPitches";
 import Review from "./pages/Review";
 import Home from "./pages/Home";
 import Header from "./components/Header";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 import PitchCreation  from "./pages/PitchCreation";
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path="/login" element={<Login />} />
           <Route path='/create-pitch' element={<PitchCreation />} />
           <Route path="/submit-pitch" element={<SubmitPitch />} />
           <Route path="/my-pitches" element={<MyPitches />} />

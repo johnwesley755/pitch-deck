@@ -1,39 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+// Home.jsx
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
-    <div className="bg-gray-900 min-h-screen text-white">
-   
-      <header className="p-4 bg-gray-800 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <Link to="/">
-        
-            <h1 className="text-2xl font-bold">Soulsborne</h1>
-          </Link>
-          <nav>
-            <Link
-              to="/create-pitch"
-              className="px-4 py-2 bg-green-600 rounded hover:bg-green-500"
-            >
-              Create Pitch
-            </Link>
-          </nav>
-        </div>
-      </header>
-      <main className="container mx-auto p-8">
-        <h2 className="text-4xl font-bold mb-6">Welcome to Soulsborne</h2>
-        <p className="text-lg mb-4">
-          Create and customize your pitches with ease.
-        </p>
+    <div className="bg-gray-900 min-h-screen text-white flex flex-col justify-center items-center">
+      <h1 className="text-4xl font-bold mb-4">Welcome to Soulsborne</h1>
+      <p className="text-lg mb-8 text-center">
+        Discover a seamless platform to create and share your pitches.
+      </p>
+      <div className="flex gap-4">
         <Link
-          to="/create-pitch"
+          to="/login"
+          className="px-6 py-3 bg-blue-600 rounded text-white text-lg hover:bg-blue-500"
+        >
+          Login
+        </Link>
+        <Link
+          to="/signup"
           className="px-6 py-3 bg-green-600 rounded text-white text-lg hover:bg-green-500"
         >
-          Get Started
+          Signup
         </Link>
-      </main>
+      </div>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
